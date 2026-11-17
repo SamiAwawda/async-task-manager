@@ -1,0 +1,19 @@
+{
+  "name": "async-task-manager",
+  "version": "1.0.0",
+  "description": "Async task management backend with TypeScript and ESM",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "start": "npm run build && node dist/index.js",
+    "test": "npm run build && node --test \"dist/**/*.test.js\"",
+    "clean": "rm -rf dist"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}
